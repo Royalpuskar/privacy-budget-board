@@ -2,7 +2,7 @@
 
 Review a pure-DP epsilon budget query by query with an exact decimal ledger.
 
-**Status:** browser-local research prototype. The current `main` version is deployed at the link below; the ledger redesign in this branch is not deployed or browser-verified yet.
+**Status:** browser-local research prototype. The current `main` version is deployed at the link below. This revision has not received manual browser viewport testing.
 
 ## Website
 
@@ -82,7 +82,7 @@ The interface uses a budget-meter and query-ledger layout specific to this accou
 
 ## Validation
 
-The current `main` version had three local test cases and browser smoke checks on 19 November 2026. This branch adds exact decimal-boundary cases; its responsive layout has not been visually checked in a browser and it is not yet deployed.
+The earlier `main` version had three local test cases and browser smoke checks on 19 November 2026. This revision adds exact decimal-boundary and tiny-epsilon tests and has been deployed to GitHub Pages. Its responsive layout has not been manually checked in a browser.
 
 `test.mjs` checks sequential decisions, decimal boundaries, tiny positive values, deterministic behavior, input preservation, malformed roots, and size limits. GitHub Actions runs the same suite. Passing tests do not establish that an underlying mechanism provides differential privacy.
 
